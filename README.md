@@ -14,6 +14,39 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 🚀 Quick start
 
+mkdir hello-gatsby && cd hello-gatsby
+
+nvm ls
+nvm install --lts
+nvm use 12.14.0
+
+node --version
+12.14.0
+npm --version
+6.14.3
+
+git init
+
+npm install -g gatsby-cli
+
+gatsby new gatsby-starter-blog https://github.com/gatsbyjs/gatsby-starter-blog
+cd .\gatsby-starter-blog\
+
+gatsby develop
+
+## DO NOT BUILD Gatsby on powershell PS or you'll get a graphql error.
+Multiple "root" queries found: "BlogPostBySlug" and "BlogPostBySlug".
+Only the first ("BlogPostBySlug") will be registered.
+ 
+Use cmd instead.
+
+Deployment to netlify.
+===
+Once you set up github integration with netlify.
+Remember to set up build command. 'gatsby build' or 'npm run build'
+
+
+
 1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the blog starter.
