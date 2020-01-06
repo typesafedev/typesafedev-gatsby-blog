@@ -1,15 +1,15 @@
-import { Router as MyRouter } from "@reach/router"
+import { Router } from "@reach/router"
 import React from "react"
 import { RandomPerson } from "../modules/RandomPerson"
 
 // setup reach router
-const Router = () => {
+const App = () => {
   return (
-    <MyRouter>
+    <Router>
       <RandomPerson path="/app/random-person/:results"></RandomPerson>
       <RandomPerson path="/app/random-person"></RandomPerson>
-    </MyRouter>
+    </Router>
   )
 }
 
-export default Router
+export default App
